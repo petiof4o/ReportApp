@@ -1,0 +1,105 @@
+﻿body 
+{
+   /* background-color: #e9e9e9; */
+    background:url(../Images/Telenor_logo8.png) no-repeat center top;    
+}
+.nav
+{
+    display:block;
+    height: 50px;
+    /*border-top:5px solid #007ec2;
+	border-left:5px solid #007ec2;
+	border-right:5px solid #007ec2; */
+    margin-top: 160px;
+    padding:20px 0 0 20;      
+    font-size: 24px;
+    text-align: center;
+    background-color:#00bcf0;
+    /*links*/ 
+}
+.nav   a:link {
+	text-decoration:none;
+	color:white;
+    }
+.nav    a:visited{
+	    text-decoration:none;
+	    color:white;
+    }
+.nav    a:hover{
+	    color:white;
+	    text-shadow: 1px 1px 4px #fff;
+    }
+.nav    a:active{
+	    text-shadow: 1px 1px 4px #fff;
+	    color:white;
+    }
+.content
+{
+    margin: 0 auto; 
+    padding: 10px; 
+    /*border: 5px solid #007ec2;*/
+    background-color:White;
+    min-height: 500px; 
+    height:auto !important; 
+    height: 500px;     
+}
+
+
+footer 
+{
+    display:block;
+    text-align:center;
+	padding:20px;
+	/*border-top:3px solid #0054a3; 
+	border-left:5px solid #007ec2;
+	border-right:5px solid #007ec2;*/
+	background-color:#00bcf0;
+	color:White;
+}
+
+/*****  LogIn  *******/
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: black;
+}
+
+.loginDisplay a:link
+{
+    color: black;
+}
+
+.loginDisplay a:visited
+{
+    color: black;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.loginDisplay a:hover
+{
+    color: black;
+    text-shadow: 1px 1px 4px #000;
+}
+.loginDisplay a:active{
+	text-shadow: 1px 1px 4px #000;
+	color:black;
+}
+
+/***** Pages *****/
+
+/**** Home ****/
+.home
+{
+    text-align:center;    
+}
+
+/***Login***/
+.log
+{
+    width:400px;
+    margin:0 auto;
+}

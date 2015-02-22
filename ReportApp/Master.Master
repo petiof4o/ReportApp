@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ReportApp.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Report App</title>
+    <link rel="Stylesheet" type="text/css" href="~/Style/Style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="loginDisplay">
+            <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                    <!--  kude ni prashta pri klik na LogIn--!-->
+                         <a href="~/Login.aspx" ID="HeadLoginStatus" runat="server">Login</a> 
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server"  LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/Login.aspx"/> ] <!---pri log out kude ni prashta !-->
+                    </LoggedInTemplate>
+           </asp:LoginView>        
+     </div>
+
+    <div class="nav">        
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                Orientation="Horizontal" StaticDisplayLevels="2">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />        
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+     <footer>All rights reserved! 2014</footer>    
+    </form>
+</body>
+</html>

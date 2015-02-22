@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="number-of-registered-users.ascx.cs" Inherits="ReportApp.admin.controls.number_of_registered_users" %>
+<a href="#" title="The total number of registered users">Registered Users:<asp:Literal runat="server" ID="lblTotalUsers" /></a>
